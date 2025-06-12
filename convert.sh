@@ -127,7 +127,6 @@ done
 # copy static assets
 cp styling.css $website_dir/
 cp -r source/media $website_dir/
-# cp source/favicon.png $website_dir/
 
 # remove all hidden files except .htaccess
 find $website_dir/ -type f -name '.*' ! -name ".htaccess" -delete
