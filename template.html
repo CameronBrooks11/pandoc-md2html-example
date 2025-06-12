@@ -48,8 +48,9 @@
         ${ styles.html() }
       </style>
 
-      $for(css)$ $-- Current date is appended as a querying parameter to make
-      clients update the cache after the website updates.
+      $for(css)$ 
+      
+      $-- Current date is appended as a querying parameter to make clients update the cache after the website updates.
       <link rel="stylesheet" href="$css$?v=$current_date$" />
       $endfor$ $if(math)$ $math$ $endif$ $for(header-includes)$
       $header-includes$ $endfor$
