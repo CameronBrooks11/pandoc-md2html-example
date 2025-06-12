@@ -1,10 +1,10 @@
 name: Deploy to GitHub Pages
 
-# Run on every push to main
+# Run on every push to master
 on:
   push:
     branches:
-      - main
+      - master
 
 # Grant the rights needed to push Pages
 permissions:
