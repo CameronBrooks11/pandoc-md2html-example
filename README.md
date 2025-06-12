@@ -7,7 +7,7 @@ The main goal of this project is to show some commonly used options when running
 - `convert.sh`: Shows the arguments that are used with pandoc, how parameters are passed to pandoc and how creating the website can be automated.
 - `styling.css`: A normal css file.
 - `template.html`: The template file that is mostly `.html` but includes pandoc control elements (denoted by `$`) which will be replaced during conversion.
-- `source/example_page.md`: A simple example page, showing how the body of a markdown file is translated by pandoc and how a header section can be used to add meta information.
+- `source/index.md`: A simple example page, showing how the body of a markdown file is translated by pandoc and how a header section can be used to add meta information.
 
 Write the page layout once in html and css and then convert multiple `.md` files to `.html`.
 
@@ -29,7 +29,7 @@ I built my website [montebaur.tech](https://montebaur.tech/projects/mtb_tech_inf
 ./convert.sh
 ```
 
-If this command ran successfully, there should be a new file called `_website/example_page.html` which you can open in your browser.
+If this command ran successfully, there should be a new file called `_website/index.html` which you can open in your browser.
 
 ### Automated updates during local development
 
