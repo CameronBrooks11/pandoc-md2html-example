@@ -13,13 +13,13 @@ Write the page layout once in html and css and then convert multiple `.md` files
 
 I built my website [montebaur.tech](https://montebaur.tech/projects/mtb_tech_info.html) with this approach.
 
-## Dependencies:
+## Dependencies
 
 - `pandoc`, need version >=2.13 to process citations
 - `entr` (optional), used for automatic conversion triggering during development
 - `python3`
 
-## Scripts:
+## Scripts
 
 ### Building the website
 
