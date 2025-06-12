@@ -26,7 +26,7 @@ A subheading can be used like this:
 
 ## Heading 2
 
-Sections can be divided by a line
+Sections can be divided by a line as so:
 
 ---
 
