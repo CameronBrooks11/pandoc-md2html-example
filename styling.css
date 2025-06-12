@@ -1,9 +1,9 @@
 /* montebaur.tech stylesheet */
 
 :root {
-  --body_background_color: #0F0F11;
+  --body_background_color: #0f0f11;
   --content_background_color: #242424;
-  --header_background_color: #2B2D35;
+  --header_background_color: #2b2d35;
 }
 
 html {
@@ -21,7 +21,6 @@ body {
   min-width: 320px;
   height: 100%;
 }
-
 
 /* =========
 Content including toc and article heading
@@ -52,7 +51,6 @@ Content including toc and article heading
   margin-bottom: 20px;
   color: #b5cea8;
 }
-
 
 /* =========
 Header styling
@@ -96,13 +94,13 @@ footer {
 
 .footer_site_link {
   float: left;
-  color:rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
 }
 
 .footer_email {
   float: left;
   margin-left: 20px;
-  color:rgb(151, 151, 151);
+  color: rgb(151, 151, 151);
 }
 
 .footer_scroll_up {
@@ -110,25 +108,36 @@ footer {
   float: right;
   visibility: hidden;
   cursor: pointer;
-  color:rgb(220, 220, 220);
+  color: rgb(220, 220, 220);
 }
 
 /* =========
 Heading styling
 === */
 
-h1 a, h2 a, h3 a, h4 a, h5 a {
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
   text-decoration: none;
-  color: #F3F3F3;
+  color: #f3f3f3;
 }
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-weight: lighter;
   border-bottom: 1px dotted rgb(151, 151, 151);
   float: none;
   color: #d7bb7d;
   clear: both;
 }
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   padding-left: 10px;
 }
 
@@ -169,7 +178,7 @@ h1.title {
   padding-bottom: 0.2em;
   text-align: left;
   border: none;
-  color: #F3F3F3;
+  color: #f3f3f3;
   height: 30px;
   font-size: 32px;
   /* min of (12% of the view port width - 16px) and (32px).
@@ -182,15 +191,16 @@ hr {
   margin-bottom: 30px;
 }
 
-.content > ol > li::marker, .content > ul > li::marker {
+.content > ol > li::marker,
+.content > ul > li::marker {
   color: #f2f2f2;
 }
 
 /* should not affect the table of contents */
-.content > ol > li, .content > ul > li {
+.content > ol > li,
+.content > ul > li {
   padding-left: 10px;
 }
-
 
 /* =========
 Paragraph styling
@@ -240,7 +250,6 @@ div.content > ul > li {
 dd p {
   margin-top: 0;
 }
-
 
 .image_row {
   display: flex;
@@ -314,7 +323,6 @@ img.maxHeight68px {
   width: 100%;
 }
 
-
 img.titleicon {
   float: right;
   height: 60px; /* keep legacy browser support */
@@ -344,7 +352,6 @@ figcaption {
   margin-top: 8px;
 }
 
-
 /* =========
 Text variants
 === */
@@ -361,7 +368,6 @@ math {
   background-color: transparent;
   color: white;
 } */
-
 
 /* =========
 Table of contents
@@ -395,7 +401,6 @@ Table of contents
   color: transparent;
 }
 
-
 /* =========
 Link styling
 === */
@@ -403,7 +408,6 @@ Link styling
 a {
   color: lightcoral;
 }
-
 
 /* =========
 Navigation bar
@@ -436,7 +440,7 @@ Navigation bar
 
 .nav_item_active {
   z-index: 100;
-  border-top: 3px solid #4D88D0;
+  border-top: 3px solid #4d88d0;
   border-right: 1px solid white;
   border-left: 1px solid white;
   border-bottom: 1px solid var(--content_background_color);
@@ -454,14 +458,16 @@ Navigation bar
   text-decoration: none;
 }
 
-
 /* =========
 Code layout
 === */
 
-pre, code, kbd, samp {
+pre,
+code,
+kbd,
+samp {
   font-family: monospace, monospace;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   /*font-size: 0.98em;*/
 }
 
@@ -489,27 +495,24 @@ code > span {
 /*
 Acts on code tags that are in p tags. So this acts on inline code that is not in a header.
 https://www.w3schools.com/css/css_combinators.asp */
-p > code, li > code  {
+p > code,
+li > code {
   background-color: rgb(10, 10, 10);
   border-radius: 3px;
   border-color: white;
   border-width: 1px;
-  color: #E8E8E8;
+  color: #e8e8e8;
   padding: 3px;
 }
-
-
 
 /* =========
 Various Stuff
 === */
 
 span.clear {
-  clear: left; display: block;
+  clear: left;
+  display: block;
 }
-
-
-
 
 /* =========
 Blockquotes

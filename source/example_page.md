@@ -1,13 +1,12 @@
 ---
 title: Example Page
 keywords:
-- keyword 1
-- keyword 2
+  - keyword 1
+  - keyword 2
 lang: en
 
 toc: true
 ---
-
 
 This is some normal text that is added to the body.
 
@@ -31,6 +30,6 @@ Sections can be divided by a line
 
 ---
 
-For images, links as well as style options like *italic* and **bold**, refer to a [markdown documentation](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+For images, links as well as style options like _italic_ and **bold**, refer to a [markdown documentation](https://docs.github.com/de/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
 For questions regarding the conversion from Markdown to HTML, refer to the [pandoc documentation](https://pandoc.org/MANUAL.html).

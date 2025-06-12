@@ -13,13 +13,11 @@ Write the page layout once in html and css and then convert multiple `.md` files
 
 I built my website [montebaur.tech](https://montebaur.tech/projects/mtb_tech_info.html) with this approach.
 
-
 ## Dependencies:
 
 - `pandoc`, need version >=2.13 to process citations
 - `entr` (optional), used for automatic conversion triggering during development
 - `python3`
-
 
 ## Scripts:
 
@@ -33,7 +31,6 @@ I built my website [montebaur.tech](https://montebaur.tech/projects/mtb_tech_inf
 
 If this command ran successfully, there should be a new file called `_website/example_page.html` which you can open in your browser.
 
-
 ### Automated updates during local development
 
 `autoupdate.sh`: Watches changes in the markdown files and updates the website after a change occurs. This file is used for development and will update the website once a file was updated. Using the commands from the script to only watch a single file is recommended to safe time.
@@ -42,4 +39,3 @@ If this command ran successfully, there should be a new file called `_website/ex
 # Website will automatcially be regenerated if one of those files changes:
 ./autoupdate.sh source/projects/page1.md source/page_index.md
 ```
-
