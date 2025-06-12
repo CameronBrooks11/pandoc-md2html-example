@@ -27,9 +27,10 @@
         name="keywords"
         content="$for(keywords)$$keywords$$sep$, $endfor$"
       />
-      $endif$ $-- Properties to make the document conform to the open graph
-      protocol. $-- This enables generation of website previews, e.g. on
-      facebook and slack.
+      $endif$ 
+
+      $-- Properties to make the document conform to the open graph protocol. 
+      $-- This enables generation of website previews, e.g. on facebook and slack.
       <meta property="og:title" content="$pagetitle$" />
       <meta property="og:type" content="website" />
       <meta
