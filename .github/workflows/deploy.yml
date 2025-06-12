@@ -12,6 +12,7 @@ permissions:
   pages: write
   id-token: write
 
+# Define the jobs for building and deploying the site
 jobs:
   build:
     runs-on: ubuntu-latest
