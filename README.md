@@ -11,13 +11,30 @@ The main goal of this project is to show some commonly used options when running
 
 Write the page layout once in html and css and then convert multiple `.md` files to `.html`.
 
-I built my website [montebaur.tech](https://montebaur.tech/projects/mtb_tech_info.html) with this approach.
+## Examples in the Wild
+
+- The original author of this repo built their website [montebaur.tech](https://montebaur.tech/projects/mtb_tech_info.html) with this original approach.
 
 ## Dependencies
 
 - `pandoc`, need version >=2.13 to process citations
 - `entr` (optional), used for automatic conversion triggering during development
 - `python3`
+
+## Makefile Commands
+
+You can now use `make` instead of calling scripts directly (requires Bash & GNU Make).
+
+- **`make build`**  
+  Build the site (runs `convert.sh`).
+- **`make clean`**  
+  Delete the generated `_website/` directory.
+- **`make watch`**  
+  Rebuild on changes (requires [`entr`](https://eradman.com/entrproject/)).
+- **`make serve`**  
+  Start a quick HTTP server at `http://localhost:8000` for preview.
+
+> **Windows users**: run these commands inside **Git Bash** or **WSL**, where Bash and Make are available. You may need to install GNU Make via Chocolatey (choco install make in an elevated PowerShell) and then re-open your shell.
 
 ## Scripts
 
