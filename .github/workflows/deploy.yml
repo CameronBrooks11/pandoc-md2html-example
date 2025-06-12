@@ -1,0 +1,49 @@
+name: Deploy to GitHub Pages
+
+# Run on every push to main
+on:
+  push:
+    branches:
+      - main
+
+# Grant the rights needed to push Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.x"
+
+      - name: Install Pandoc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc
+
+      - name: Build site
+        run: |
+          chmod +x ./convert.sh
+          ./convert.sh
+
+      - name: Upload _website artifact
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: _website
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
