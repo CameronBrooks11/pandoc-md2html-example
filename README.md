@@ -56,3 +56,7 @@ If this command ran successfully, there should be a new file called `_website/in
 # Website will automatcially be regenerated if one of those files changes:
 ./autoupdate.sh source/projects/page1.md source/page_index.md
 ```
+
+## Attribution
+
+This project is a further development of the approach in [montioo/pandoc-md2html-example](https://github.com/montioo/pandoc-md2html-example) and builds upon it.
