@@ -21,7 +21,9 @@ Write the page layout once in html and css and then convert multiple `.md` files
 - `entr` (optional), used for automatic conversion triggering during development
 - `python3`
 
-## Makefile Commands
+## Scripts
+
+### Makefile Commands
 
 You can now use `make` instead of calling scripts directly (requires Bash & GNU Make).
 
@@ -35,8 +37,6 @@ You can now use `make` instead of calling scripts directly (requires Bash & GNU 
   Start a quick HTTP server at `http://localhost:8000` for preview.
 
 > **Windows users**: run these commands inside **Git Bash** or **WSL**, where Bash and Make are available. You may need to install GNU Make via Chocolatey (choco install make in an elevated PowerShell) and then re-open your shell.
-
-## Scripts
 
 ### Building the website
 
