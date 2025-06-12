@@ -10,7 +10,7 @@ toc: true
 
 This is some normal text that is added to the body.
 
-You can add headings as follows
+You can add headings as follows...
 
 # Heading 1
 
